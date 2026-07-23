@@ -1,8 +1,13 @@
+import Header from './components/Header.jsx'
+
 function App() {
   return (
-    <main>
-      <p>Conexão CO</p>
-    </main>
+    <>
+      <Header />
+      <main>
+        <p>Conexão CO</p>
+      </main>
+    </>
   )
 }
 
