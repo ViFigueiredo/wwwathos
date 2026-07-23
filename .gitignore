@@ -13,3 +13,6 @@ dist-ssr/
 
 # Visual brainstorming companion sessions
 .superpowers/
+
+# Git worktrees
+.worktrees/
