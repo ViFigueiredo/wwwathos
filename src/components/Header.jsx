@@ -1,14 +1,8 @@
 import { useState } from 'react'
 import { COMPANY } from '../data/constants.js'
+import { NAV_LINKS } from '../data/nav.js'
 import logo from '../assets/logo.jpeg'
 import './Header.css'
-
-const NAV_LINKS = [
-  { href: '#inicio', label: 'Início' },
-  { href: '#solucoes', label: 'Soluções' },
-  { href: '#sobre', label: 'Sobre' },
-  { href: '#contato', label: 'Contato' },
-]
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)

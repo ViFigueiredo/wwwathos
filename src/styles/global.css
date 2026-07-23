@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: var(--header-height);
+}
+
 body {
   font-family: var(--font-family);
   color: var(--color-text);

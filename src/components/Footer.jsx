@@ -1,13 +1,7 @@
 import { COMPANY } from '../data/constants.js'
+import { NAV_LINKS } from '../data/nav.js'
 import logo from '../assets/logo.jpeg'
 import './Footer.css'
-
-const NAV_LINKS = [
-  { href: '#inicio', label: 'Início' },
-  { href: '#solucoes', label: 'Soluções' },
-  { href: '#sobre', label: 'Sobre' },
-  { href: '#contato', label: 'Contato' },
-]
 
 function Footer() {
   const year = new Date().getFullYear()
