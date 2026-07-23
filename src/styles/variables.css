@@ -1,0 +1,15 @@
+:root {
+  --color-navy: #0A0F7A;
+  --color-navy-dark: #131c99;
+  --color-red: #E30613;
+  --color-whatsapp: #25D366;
+  --color-bg-light: #F5F6FB;
+  --color-bg-white: #FFFFFF;
+  --color-text: #1A1A2E;
+  --color-text-muted: #5A5F87;
+  --font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --header-height: 72px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --max-width: 1180px;
+}
