@@ -25,7 +25,25 @@
   font-size: 0.9rem;
   color: var(--color-text-muted);
 }
+.footer__contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer__contact-item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--color-navy);
+}
 .footer__copy {
   font-size: 0.8rem;
   color: var(--color-text-muted);
+}
+.footer__copy a {
+  color: var(--color-navy);
+  font-weight: 600;
+}
+.footer__copy a:hover {
+  text-decoration: underline;
 }

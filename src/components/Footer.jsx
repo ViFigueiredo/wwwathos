@@ -1,6 +1,7 @@
 import { COMPANY } from '../data/constants.js'
 import { NAV_LINKS } from '../data/nav.js'
 import logo from '../assets/logo.jpeg'
+import { PhoneIcon, MailIcon } from './icons.jsx'
 import './Footer.css'
 
 function Footer() {
@@ -18,10 +19,22 @@ function Footer() {
           ))}
         </nav>
         <div className="footer__contact">
-          <a href={`tel:${COMPANY.phoneDigits}`}>{COMPANY.phoneDisplay}</a>
-          <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+          <a href={`tel:${COMPANY.phoneDigits}`} className="footer__contact-item">
+            <PhoneIcon />
+            {COMPANY.phoneDisplay}
+          </a>
+          <a href={`mailto:${COMPANY.email}`} className="footer__contact-item">
+            <MailIcon />
+            {COMPANY.email}
+          </a>
         </div>
-        <p className="footer__copy">© {year} Conexão CO. Todos os direitos reservados.</p>
+        <p className="footer__copy">
+          ©{' '}
+          <a href="https://www.figcodes.tech/" target="_blank" rel="noopener noreferrer">
+            Figcodes Soluções
+          </a>
+          . Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   )
