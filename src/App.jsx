@@ -1,4 +1,5 @@
 import Header from './components/Header.jsx'
+import WhatsAppFloatButton from './components/WhatsAppFloatButton.jsx'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <main>
         <p>Conexão CO</p>
       </main>
+      <WhatsAppFloatButton />
     </>
   )
 }
