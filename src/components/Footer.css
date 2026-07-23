@@ -36,6 +36,17 @@
   flex-shrink: 0;
   color: var(--color-navy);
 }
+.footer__legal {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+.footer__legal a:hover {
+  text-decoration: underline;
+}
 .footer__copy {
   font-size: 0.8rem;
   color: var(--color-text-muted);

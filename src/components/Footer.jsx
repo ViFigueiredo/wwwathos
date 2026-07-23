@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom'
 import { COMPANY } from '../data/constants.js'
-import { NAV_LINKS } from '../data/nav.js'
+import { NAV_LINKS, LEGAL_LINKS } from '../data/nav.js'
 import logo from '../assets/logo.jpeg'
 import { PhoneIcon, MailIcon } from './icons.jsx'
 import './Footer.css'
@@ -13,9 +14,9 @@ function Footer() {
         <img src={logo} alt="Conexão CO" width="140" height="35" className="footer__logo" />
         <nav className="footer__nav">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href}>
+            <Link key={link.href} to={link.href}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="footer__contact">
@@ -28,6 +29,13 @@ function Footer() {
             {COMPANY.email}
           </a>
         </div>
+        <nav className="footer__legal">
+          {LEGAL_LINKS.map((link) => (
+            <Link key={link.href} to={link.href}>
+              {link.label}
+            </Link>
+          ))}
+        </nav>
         <p className="footer__copy">
           ©{' '}
           <a href="https://www.figcodes.tech/" target="_blank" rel="noopener noreferrer">

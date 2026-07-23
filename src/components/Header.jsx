@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { COMPANY } from '../data/constants.js'
 import { NAV_LINKS } from '../data/nav.js'
 import logo from '../assets/logo.jpeg'
@@ -14,15 +15,15 @@ function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <a href="#inicio" className="header__logo" onClick={handleNavClick}>
+        <Link to="/#inicio" className="header__logo" onClick={handleNavClick}>
           <img src={logo} alt="Conexão CO" width="160" height="40" />
-        </a>
+        </Link>
 
         <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} onClick={handleNavClick}>
+            <Link key={link.href} to={link.href} onClick={handleNavClick}>
               {link.label}
-            </a>
+            </Link>
           ))}
           <a
             href={COMPANY.whatsappUrl}
